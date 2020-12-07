@@ -156,7 +156,7 @@ pipeline {
 
                 # lint chart
                 echo '### Running chart linter ###'
-                cd ${APP_NAME}/web
+                cd ${APP_NAME}/web/chart
                 helm lint chart
 
                 # update values for deployment
